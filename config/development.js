@@ -1,7 +1,7 @@
 'use strict';
 var winston = require('winston');
 
-/** configuracoes gerais deste ambiente: desenvolvimento */
+// configuracoes gerais deste ambiente: desenvolvimento
 var config = {
   mongo: {
     debug: true
@@ -10,7 +10,7 @@ var config = {
     transports: [
       new (winston.transports.Console)({
         handleExceptions: true,
-        timestamp: function() {
+        timestamp: function () {
           return (new Date()).toLocaleTimeString();
         },
         colorize: true

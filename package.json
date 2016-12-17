@@ -1,0 +1,29 @@
+{
+  "name": "jira-webhooks-api",
+  "version": "1.0.0",
+  "description": "Tratamento de WebHooks enviados pelo JIRA e armazenado em Mongo",
+  "main": "lib/index.js",
+  "scripts": {
+    "start": "node lib/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jayder França <jayderfranca@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "istanbul": "^0.4.5"
+  },
+  "dependencies": {
+    "app-root-path": "^2.0.1",
+    "bluebird": "^3.4.6",
+    "body-parser": "^1.15.2",
+    "caller": "^1.0.1",
+    "compression": "^1.6.2",
+    "cookie-parser": "^1.4.3",
+    "cors": "^2.8.1",
+    "express": "^4.14.0",
+    "helmet": "^3.1.0",
+    "http-status": "^0.2.3",
+    "object-assign": "^4.1.0",
+    "winston": "^2.3.0"
+  }
+}

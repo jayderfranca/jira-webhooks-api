@@ -1,4 +1,4 @@
-var assign = require('object-assign')
+var assign = require('object-assign'),
     pkg = require('../package.json');
 
 // obtem o ambiente definido
@@ -10,7 +10,7 @@ var config = require('./' + env);
 // definicoes globais, pode ser sobrescrito no arquivo do ambiente
 var global = {
   env: env,
-  version: 'v' + pkg.version,
+  version: 'v' + pkg.version.split('.')[0] + '.' + pkg.version.split('.')[1],
   listen: {
     http: process.env.PORT || 8080,
     https: process.env.PORT_SSL || 8443

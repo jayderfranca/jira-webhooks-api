@@ -11,7 +11,7 @@ var config = {
       new (winston.transports.Console)({
         handleExceptions: true,
         timestamp: function () {
-          return (new Date()).toLocaleTimeString();
+          return (new Date()).toLocaleString(null, { hour12: false });
         },
         colorize: true
       })

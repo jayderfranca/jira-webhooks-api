@@ -8,5 +8,9 @@ Através desta API os dados do JIRA são replicados para uma base local de fáci
 **Tecnologias:**
 
 - [Node.JS](https://nodejs.org/en/)
-- [JavaScript / ECMAScript 5](https://es5.github.io/)
+- [JavaScript / ECMAScript 5.1](https://es5.github.io/)
 - [MongoDB](https://www.mongodb.com/community)
+
+## Licença
+
+MIT © Jayder França

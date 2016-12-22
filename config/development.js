@@ -3,6 +3,9 @@ var winston = require('winston');
 
 // configuracoes gerais deste ambiente: desenvolvimento
 var config = {
+  mongo: {
+    debug: true
+  },
   log: {
     transports: [
       new (winston.transports.Console)({

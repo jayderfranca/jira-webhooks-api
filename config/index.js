@@ -1,4 +1,4 @@
-var assign = require('object-assign'),
+var _ = require('lodash'),
     pkg = require('../package.json');
 
 // obtem o ambiente definido
@@ -9,6 +9,7 @@ var config = require('./' + env);
 
 // definicoes globais, pode ser sobrescrito no arquivo do ambiente
 var global = {
+  name: pkg.name,
   env: env,
   version: 'v' + pkg.version.split('.')[0] + '.' + pkg.version.split('.')[1],
   listen: {
@@ -27,4 +28,4 @@ var global = {
 };
 
 // merge das configuracoes globais com as do ambiente
-module.exports = assign({}, global, config);
+module.exports = _.defaultsDeep({}, config, global);

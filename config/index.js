@@ -1,4 +1,6 @@
+'use strict';
 var _ = require('lodash'),
+    winston = require('winston'),
     pkg = require('../package.json');
 
 // obtem o ambiente definido
@@ -24,6 +26,17 @@ var global = {
     url: 'mongodb://' + (process.env.MONGO_HOST || 'localhost') + '/jira',
     debug: process.env.MONGO_DEBUG || false,
     options: process.env.MONGO_OPTIONS || {}
+  },
+  log: {
+    transports: [
+      new (winston.transports.Console)({
+        handleExceptions: true,
+        timestamp: function () {
+          return (new Date()).toLocaleString();
+        },
+        colorize: true
+      })
+    ]
   }
 };
 

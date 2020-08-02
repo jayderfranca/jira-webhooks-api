@@ -23,23 +23,23 @@
   "devDependencies": {
     "chai": "^3.5.0",
     "istanbul": "^0.4.5",
-    "mocha": "^3.2.0",
-    "mockgoose": "^6.0.8"
+    "mocha": "^8.1.0",
+    "mockgoose": "^8.0.4"
   },
   "dependencies": {
     "app-root-path": "^2.0.1",
     "bluebird": "^3.5.0",
-    "body-parser": "^1.17.2",
+    "body-parser": "^1.19.0",
     "caller": "^1.0.1",
-    "compression": "^1.7.0",
+    "compression": "^1.7.4",
     "cookie-parser": "^1.4.3",
     "cors": "^2.8.4",
-    "express": "^4.15.3",
-    "helmet": "^3.6.1",
+    "express": "^4.17.1",
+    "helmet": "^3.23.3",
     "http-status": "^0.2.5",
-    "lodash": "^4.17.4",
-    "mongoose": "4.10.8",
-    "swagger-jsdoc": "^1.9.7",
+    "lodash": "^4.17.19",
+    "mongoose": "^5.9.27",
+    "swagger-jsdoc": "^4.0.0",
     "swagger-ui-dist": "^3.2.1",
     "winston": "^2.3.1"
   }

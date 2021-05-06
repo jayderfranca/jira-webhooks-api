@@ -37,7 +37,7 @@
     "express": "^4.17.1",
     "helmet": "^3.23.3",
     "http-status": "^0.2.5",
-    "lodash": "^4.17.19",
+    "lodash": "^4.17.21",
     "mongoose": "^5.9.27",
     "swagger-jsdoc": "^4.0.0",
     "swagger-ui-dist": "^3.2.1",
